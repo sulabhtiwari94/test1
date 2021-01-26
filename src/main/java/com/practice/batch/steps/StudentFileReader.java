@@ -27,7 +27,6 @@ public class StudentFileReader extends FlatFileItemReader<StudentDetailVO> {
 		this.setName("CSV-Reader");
 		this.setLinesToSkip(1);
 		this.setLineMapper(lineMapper());
-		new String().concat("sdf");
 	}
 
 	private LineMapper<StudentDetailVO> lineMapper() {

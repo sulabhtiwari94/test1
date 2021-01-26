@@ -20,8 +20,8 @@ public class StudentWriter implements ItemWriter<ResponseVO<StudentDetailVO>> {
 
 	@Override
 	public void write(List<? extends ResponseVO<StudentDetailVO>> items) throws Exception {
-		items.stream().forEach(
-				t -> System.out.println(t.getResponseVO().getStudentId() + ": " + t.getResponseVO().getStudentName()));
+		// items.stream().forEach(t ->
+		// System.out.println(t.getResponseVO().getStudentName()));
 
 	}
 
