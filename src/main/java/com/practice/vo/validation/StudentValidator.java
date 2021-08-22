@@ -62,7 +62,7 @@ public class StudentValidator {
 			builder.append(
 					MessageFormat.format(Messages.getMesssge(MessageCodes.NO_STUDENT_PRESENT), item.getStudentId()));
 
-		} else if (!Action.INSERT.equals(action) && studentDetail.getVersion().equals(item.getVersion())) {
+		} else if (!Action.INSERT.equals(action) && studentDetail.getVersion().compareTo(item.getVersion()) != 0) {
 			builder.append(MessageFormat.format(Messages.getMesssge(MessageCodes.STUDENT_VERSION_MISMATCH),
 					item.getStudentId()));
 
